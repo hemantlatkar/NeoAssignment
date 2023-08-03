@@ -15,15 +15,16 @@ class QuestionRepository(private val questionService: QuestionService,
     val questions: MutableLiveData<ResponseData>
     get() = questionsLiveData
 
+    /***
+     * Network condition handle to fetch questionList
+     * @getQuestions will Fetch from web service when network available
+     * And Fetch from asset folder when offline
+     */
     suspend fun getQuestions() : ResponseData? {
-        /*if(NetworkUtils.isInternetAvailable(applicationContext)){
+        if(NetworkUtils.isInternetAvailable(applicationContext)){
             return questionService.getQuestions().body()
         } else{
             return TempDataUtils.readJsonFile(applicationContext)
-
         }
-        return null*/
-        return TempDataUtils.readJsonFile(applicationContext)
-
     }
 }
