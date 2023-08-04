@@ -1,4 +1,4 @@
-# NeoAssigngment
+# NeoAssignment
 
 The Neo group Assignment, an app using the Question Master API for web service to fetch questions.
 
