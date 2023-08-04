@@ -12,12 +12,12 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
-import com.example.neoassignment.model.Option
 
 @Composable
 fun EditableTextFieldWithHint(onEditTextListener: (String) -> Unit) {
-    var textFieldValue by remember { mutableStateOf(TextFieldValue()) }
     Column {
+        var textFieldValue by remember { mutableStateOf(TextFieldValue()) }
+
         Box(
             modifier = Modifier
                 .fillMaxWidth()
@@ -25,6 +25,7 @@ fun EditableTextFieldWithHint(onEditTextListener: (String) -> Unit) {
                 .border(1.dp, Color.Gray, MaterialTheme.shapes.small)
         ) {
             TextField(
+
                 value = textFieldValue,
                 onValueChange = {
                     textFieldValue = it

@@ -113,7 +113,10 @@ fun ShowQuestions(mainViewModel: MainViewModel) {
             previousQuestionId = currentQuestion?.id?.minus(1)
             EditableTextFieldWithHint{
                 if(!TextUtils.isEmpty(it)){
-                    nextQuestionId = currentQuestion?.next_question_id?.toInt() ?: 1
+                    if(!TextUtils.isEmpty(currentQuestion?.next_question_id))
+                        nextQuestionId = currentQuestion?.next_question_id?.toInt() ?: 1
+                    else
+                        nextQuestionId = 1
                 }
             }
             Spacer(modifier = Modifier.height(16.dp))

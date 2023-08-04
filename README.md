@@ -16,9 +16,15 @@ The Neo group Assignment, an app using the Question Master API for web service t
 - Minimum SDK 24
 - Target SDK 32
 
+
+## Application release link
+
+- [App Build](https://github.com/hemantlatkar/NeoAssignment/tree/main/app/release) - Application
+  build
+- 
 ## Application demo
 
-- [Demo](https://drive.google.com/file/d/1v_gGPDtQE0iVr7F6FHfKzbkEvwoaCNxa/view?usp=sharing) - Application
+- [Demo](https://drive.google.com/file/d/1wM6iR1CmxHzl1Uc9vmluoRsX8Ekbw3JX/view?usp=sharing) - Application
   Demo
 
 

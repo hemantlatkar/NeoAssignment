@@ -22,9 +22,20 @@ android {
         }
     }
 
+    signingConfigs {
+        release  {
+            keyAlias 'key0'
+            //Enable V1 signing
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
