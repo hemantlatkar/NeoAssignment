@@ -19,7 +19,7 @@ The Neo group Assignment, an app using the Question Master API for web service t
 
 ## Application release link
 
-- [App Build](https://github.com/hemantlatkar/NeoAssignment/tree/main/app/release) - Application
+- [APK](https://github.com/hemantlatkar/NeoAssignment/tree/main/app/release) - Application
   build
 
 ## Application demo
