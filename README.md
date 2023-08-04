@@ -10,6 +10,7 @@ The Neo group Assignment, an app using the Question Master API for web service t
 - MVVM Architecture
 - LiveData
 - Repository
+- Retrofit
 
 ## SDK levels supported
 
